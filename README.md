@@ -6,14 +6,18 @@ PT Jaya Jaya Maju merupakan salah satu perusahaan multinasional berkembang yang 
 
 Tingginya volatilitas perputaran karyawan ini berpotensi mengganggu stabilitas produktivitas kerja, memicu hilangnya talenta-talenta kunci (*key talent*), serta membengkaknya beban finansial akibat proses rekrutmen dan pelatihan karyawan baru secara terus-menerus. Menanggapi situasi ini, manajer departemen HR meminta bantuan analitik untuk mengidentifikasi akar permasalahan pemicu tingginya angka *attrition* serta membangun sistem mitigasi risiko berbasis kecerdasan buatan (*Artificial Intelligence*).
 
-### Permasalahan Bisnis
+### Permasalahan Bisnis & Jawaban Berbasis Data (Data-Driven Solutions)
 
-Terdapat beberapa permasalahan bisnis utama yang diselesaikan melalui proyek data science ini:
+Berikut adalah permasalahan bisnis utama dari departemen HR beserta jawaban konkret yang berhasil dibuktikan melalui proyek data science ini:
+
 1. **Identifikasi Faktor Kunci:** Faktor-faktor operasional, finansial, dan demografis apa saja yang paling signifikan memengaruhi *attrition rate* karyawan di PT Jaya Jaya Maju?
+   * **Jawaban:** Berdasarkan nilai *Feature Importance* dari model terbaik (CatBoost), faktor paling mematikan yang mendorong keputusan karyawan untuk keluar adalah **Kebijakan Lembur (`OverTime_Yes`)** yang memicu *burnout* kerja, diikuti oleh **Tingkat Opsi Saham (`StockOptionLevel`)** sebagai faktor pengikat finansial jangka panjang, serta karakteristik demografi **Status Pernikahan Lajang (`MaritalStatus_Single`)**.
 2. **Karakteristik & Profil Risiko:** Bagaimana profil atau karakteristik utama dari karyawan yang memiliki kecenderungan tinggi untuk mengundurkan diri?
+   * **Jawaban:** Hasil analisis deskriptif dan visualisasi dashboard menunjukkan bahwa profil karyawan yang paling rentan mengalami *attrition* di PT Jaya Jaya Maju adalah **karyawan berstatus lajang (laju keluar 26,70%)**, berada di **rentang pendapatan bulanan rendah (*Monthly Income* di bawah $5.000)**, ditempatkan di **Departemen Sales (attrition rate 20,69%)**, dan memegang peran spesifik sebagai **Sales Representative (attrition rate kritis 43,1%)**.
 3. **Mitigasi Preventif:** Bagaimana merancang sistem pengawasan berbasis kecerdasan buatan untuk mendeteksi karyawan aktif saat ini yang masuk ke dalam kategori risiko tinggi (*High Risk*) sebelum mereka memutuskan keluar?
+   * **Jawaban:** Solusi diimplementasikan menggunakan model **CatBoost Classifier** dengan penyesuaian *decision threshold* sensitif bisnis sebesar **0.35**. Sistem ini berhasil menjaring **9 karyawan aktif saat ini yang masuk kategori High Risk** pada data pengujian, di mana pola perilaku kerja dan kompensasi mereka sudah 75% identik dengan data historis mantan karyawan yang telah keluar. Daftar ini disajikan secara *real-time* pada menu *Risk Watchlist* di halaman 3 Business Dashboard untuk memicu tindakan *Stay Interview* oleh HR.
 4. **Justifikasi Nilai Investasi:** Bagaimana mengonversi performa akurasi model prediktif data science menjadi efisiensi penghematan anggaran HR secara riil?
-
+   * **Jawaban:** Dilakukan melalui metode *Cost-Benefit Analysis* (CBA). Dengan tingkat jaring radar (*Recall*) sebesar 75%, model CatBoost berhasil menangkap mayoritas sinyal karyawan berisiko. Melalui biaya program retensi preventif sebesar \$1.500 per orang versus biaya kerugian penuh kehilangan karyawan sebesar \$10.000 per orang, penerapan model ini secara nyata memberikan **total penghematan anggaran bersih sebesar \$139.500 (meningkat hampir 4 kali lipat lebih efisien** dibandingkan pendekatan model klasifikasi standar).
 ### Cakupan Proyek
 
 * **Analisis Data Eksploratif (EDA):** Skrining menyeluruh terhadap karakteristik kompensasi, keuangan, beban kerja, kepuasan kerja, dan hubungan industrial untuk menemukan tren perilaku *attrition*.
