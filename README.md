@@ -6,7 +6,7 @@ PT Jaya Jaya Maju merupakan salah satu perusahaan multinasional berkembang yang 
 
 Tingginya volatilitas perputaran karyawan ini berpotensi mengganggu stabilitas produktivitas kerja, memicu hilangnya talenta-talenta kunci (*key talent*), serta membengkaknya beban finansial akibat proses rekrutmen dan pelatihan karyawan baru secara terus-menerus. Menanggapi situasi ini, manajer departemen HR meminta bantuan analitik untuk mengidentifikasi akar permasalahan pemicu tingginya angka *attrition* serta membangun sistem mitigasi risiko berbasis kecerdasan buatan (*Artificial Intelligence*).
 
-### Permasalahan Bisnis & Jawaban Berbasis Data (Data-Driven Solutions)
+### Permasalahan Bisnis & Jawaban Berbasis Data
 
 Berikut adalah permasalahan bisnis utama dari departemen HR beserta jawaban konkret yang berhasil dibuktikan melalui proyek data science ini:
 
@@ -18,6 +18,7 @@ Berikut adalah permasalahan bisnis utama dari departemen HR beserta jawaban konk
    * **Jawaban:** Solusi diimplementasikan menggunakan model **CatBoost Classifier** dengan penyesuaian *decision threshold* sensitif bisnis sebesar **0.35**. Sistem ini berhasil menjaring **9 karyawan aktif saat ini yang masuk kategori High Risk** pada data pengujian, di mana pola perilaku kerja dan kompensasi mereka sudah 75% identik dengan data historis mantan karyawan yang telah keluar. Daftar ini disajikan secara *real-time* pada menu *Risk Watchlist* di halaman 3 Business Dashboard untuk memicu tindakan *Stay Interview* oleh HR.
 4. **Justifikasi Nilai Investasi:** Bagaimana mengonversi performa akurasi model prediktif data science menjadi efisiensi penghematan anggaran HR secara riil?
    * **Jawaban:** Dilakukan melalui metode *Cost-Benefit Analysis* (CBA). Dengan tingkat jaring radar (*Recall*) sebesar 75%, model CatBoost berhasil menangkap mayoritas sinyal karyawan berisiko. Melalui biaya program retensi preventif sebesar \$1.500 per orang versus biaya kerugian penuh kehilangan karyawan sebesar \$10.000 per orang, penerapan model ini secara nyata memberikan **total penghematan anggaran bersih sebesar \$139.500 (meningkat hampir 4 kali lipat lebih efisien** dibandingkan pendekatan model klasifikasi standar).
+
 ### Cakupan Proyek
 
 * **Analisis Data Eksploratif (EDA):** Skrining menyeluruh terhadap karakteristik kompensasi, keuangan, beban kerja, kepuasan kerja, dan hubungan industrial untuk menemukan tren perilaku *attrition*.
