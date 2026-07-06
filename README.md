@@ -19,6 +19,9 @@ Berikut adalah permasalahan bisnis utama dari departemen HR beserta jawaban konk
 4. **Justifikasi Nilai Investasi:** Bagaimana mengonversi performa akurasi model prediktif data science menjadi efisiensi penghematan anggaran HR secara riil?
    * **Jawaban:** Dilakukan melalui metode *Cost-Benefit Analysis* (CBA). Dengan tingkat jaring radar (*Recall*) sebesar 75%, model CatBoost berhasil menangkap mayoritas sinyal karyawan berisiko. Melalui biaya program retensi preventif sebesar \$1.500 per orang versus biaya kerugian penuh kehilangan karyawan sebesar \$10.000 per orang, penerapan model ini secara nyata memberikan **total penghematan anggaran bersih sebesar \$139.500 (meningkat hampir 4 kali lipat lebih efisien** dibandingkan pendekatan model klasifikasi standar).
 
+### Sumber Data
+[Sumber Data Utama](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
+
 ### Cakupan Proyek
 
 * **Analisis Data Eksploratif (EDA):** Skrining menyeluruh terhadap karakteristik kompensasi, keuangan, beban kerja, kepuasan kerja, dan hubungan industrial untuk menemukan tren perilaku *attrition*.
@@ -60,9 +63,7 @@ Business Dashboard dirancang menggunakan Google Looker Studio untuk memfasilitas
    * Menyediakan menu utama operasional HR berupa tabel prediksi karyawan aktif saat ini yang diidentifikasi berisiko tinggi (*High Risk*) lengkap dengan kolom *Risk Score (%)* dan *Risk Category* hasil pemodelan AI.
    * Menyajikan kalkulasi penghematan keuangan intervensi di mana penanganan terhadap 9 karyawan aktif yang saat ini terdeteksi *High Risk* membutuhkan biaya retensi sebesar \$13.500 namun berpotensi menyelamatkan anggaran bersih perusahaan sebesar **\$76.500**.
 
-**[Akses Business Attrition Dashboard PT Jaya Jaya Maju](MASUKKAN_LINK_LOOKER_STUDIO_KAMU_DISINI)**
-
-*(Catatan: Pastikan Anda masuk menggunakan akun korporat PT Jaya Jaya Maju yang telah diberikan izin akses oleh administrator database pusat HR).*
+**[Akses Business Attrition Dashboard PT Jaya Jaya Maju](https://datastudio.google.com/reporting/b64aff7a-bcf4-4846-934b-2d273dd9e935)**
 
 ---
 
